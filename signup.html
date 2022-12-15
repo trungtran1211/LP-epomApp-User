@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Signup</title>
+    <link rel="icon" href="./images/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/signup.css" />
+  </head>
+  <body>
+    <div class="signup">
+      <h1 class="signup-heading">Sign up</h1>
+      <form action="#" onsubmit="signup()" class="signup-form" autocomplete="off">
+        <label for="fullname" class="signup-label">Email:</label>
+        <input type="email" onblur="validateEmail(this);" id="email" class="signup-input" placeholder="Email">
+        <label for="email" class="signup-label">Password:</label>
+        <input type="password" id="password" class="signup-input" placeholder="Password">
+        <label for="email" class="signup-label">Cofirm Password:</label>
+        <input type="password" id="confirm" class="signup-input" placeholder="Cofirm Password">
+        <button id="button" class="signup-submit">Sign up</button>
+      </form>
+      <p class="signup-already">
+        <span>Already have an account ?</span>
+        <a href="./login.html" class="signup-login-link">Login</a>
+      </p>
+    </div>
+    <script src="./js/script.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</body>
+</html>

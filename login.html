@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/login.css" />
+    <title>Login</title>
+</head>
+<body>
+    <div class="signup">
+        <h1 class="signup-heading">Login</h1>
+        <form action="#" onsubmit="login()" class="signup-form" autocomplete="off">
+          <label for="email" class="signup-label">Email:</label>
+          <input type="email" onblur="validateEmail(this);" id="email" class="signup-input" placeholder="Email">
+          <label for="password" class="signup-label">Password:</label>
+          <input type="password" id="password" class="signup-input" placeholder="Password">
+          <button class="signup-submit">Login</button>
+        </form>
+        <p class="signup-already">
+          <span>Do not have an account ?</span>
+          <a href="./signup.html" class="signup-login-link">Sign Up</a>
+        </p>
+      </div>
+      <script src="./js/script.js"></script>
+      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>
